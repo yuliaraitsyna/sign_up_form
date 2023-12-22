@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <section class="logo_pic">
+            <h1> YR | ART </h3>
+        </section>
+        <form class="form">
+            <h1 class="formHeader">Sign Up</h1>
+            <legend class="legend">
+                <label>Username</label>
+                <input id="username" type="text" placeholder="username" minlength="4" maxlength="20" required>
+                <label>Email</label>
+                <input id="email" type="email" placeholder="your@email.com" required>
+                <label>Phone number</label>
+                <input id="phone" type="tel" placeholder="Enter your number with +" pattern="(([\+]\d{12})?)" required>
+                <label>Password</label>
+                <input id="password" type="password" oninput="validateInput('password')" required>
+                <label>Confirm password</label>
+                <input id="passwordConfirmation" type="password" oninput="validateInput('passwordConfirmation')" required>
+            </legend>
+            <button type="submit" id="submit">Create Account</button>
+            <p class="text">
+                Already have an account? <span class="login_text">  Log In</span>
+            </p>
+        </form>
+    </div>
+</body>
+</html>

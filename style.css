@@ -1,0 +1,132 @@
+:root{
+    --pink_bg: #cc0066;
+    --form_bg: #11030e;
+    --green_valid:#37fa6e;
+    --red_invalid:#ffbfbf;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(90deg, rgba(101, 61, 255, 1) 0%, rgba(218, 75, 124, 1) 50%, rgba(252,196, 70,1)100%);
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100vw;
+}
+.container
+{
+   display: flex;
+   flex-direction: row;
+   width: 80vw;
+   height: 80vh;
+   background-color: white;
+   border-radius: 5%;
+   overflow: hidden;
+   border:none;
+   box-shadow: 1px 5px 5px 5px rgba(32, 32, 32, 0.468);
+}
+.logo_pic
+{
+    width:40%;
+    height:100%;
+}
+.form
+{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--form_bg);
+    width:60%;
+    height: 100%;
+    color: white;
+}
+.legend
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;
+    height: auto;
+    gap:5%;
+    margin: 10px;
+}
+.formHeader
+{
+    text-align: center;
+}
+.logo_pic
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.img
+{
+    width: 40%;
+}
+.formHeader
+{
+    font-family: 'Pacifico', cursive;
+}
+#submit
+{
+    width:60%;
+    align-self: center;
+    border-radius: 10px;
+    background-color: var(--pink_bg);
+    height:35px;
+    color:white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input
+{
+    width:80%;
+    align-self: center;
+    height: 25px;
+    background-color: white;
+    border: none;
+    border-left: solid var(--pink_bg);
+    padding: 5px;
+    margin:5px;
+    border-radius: 5px;
+}
+input:focus
+{
+    outline: solid var(--pink_bg) 2px;
+}
+
+.valid
+{
+    border-left: solid var(--green_valid) 4px;
+    outline:none;
+}
+
+.invalid
+{
+    border-left: solid red 4px;
+    background-color: var(--red_invalid);
+}
+
+#username:focus:valid, #email:focus:valid, #phone:focus:valid{
+    border-left: solid var(--green_valid) 4px;
+    outline:none;
+}
+#username:focus:invalid, #email:focus:invalid, #phone:focus:invalid{
+    border-left: solid red 4px;
+    background-color: var(--red_invalid);
+}
+label
+{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text
+{
+    text-align: center;
+}
+.login_text
+{
+    color: var(--pink_bg);
+}
