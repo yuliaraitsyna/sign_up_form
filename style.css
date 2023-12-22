@@ -19,6 +19,7 @@ body{
    display: flex;
    flex-direction: row;
    width: 80vw;
+   max-width: 600px;
    height: 80vh;
    background-color: white;
    border-radius: 5%;
